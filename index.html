@@ -1427,9 +1427,7 @@
     .cm2-ev-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 34px}
     .tds .cm2-ev-lead{margin:-8px 0 22px;font-size:15px;line-height:1.6;color:var(--tds-body);max-width:78ch}
     #nghien-cuu{scroll-margin-top:96px}
-    /* 29/09 vòng 7: ảnh hero nhích lên ngang tiêu đề, chip nằm gọn trong khung, cắt vệt tối mép trái ảnh gốc */
-    @media (min-width:1024px){.cm2-hero .bp-hero-grid{align-items:start}.cm2-hero .bp-hero-fig{margin-top:58px}}
-    .tds .cm2-hero .bp-hero-chip{left:16px;right:auto;top:16px}
+    /* 29/09 vòng 7: bố cục khung ảnh giữ như gốc (Vincent nghĩ lại, chọn bản cũ); chỉ cắt vệt tối mép trái ảnh chân dung */
     .cm2-hero .bp-hero-img img{transform:scale(1.05);transform-origin:55% 35%}
     /* 29/09 vòng 7: hai font chủ đạo (Vincent: nhiều font quá): Newsreader cho tiêu đề và số lớn, Be Vietnam Pro cho mọi chỗ còn lại, bỏ font chữ máy */
     :root{--ag-mono:"Be Vietnam Pro",system-ui,-apple-system,sans-serif;--tds-f-mono:"Be Vietnam Pro",system-ui,-apple-system,sans-serif}
@@ -1510,6 +1508,13 @@
     <figure class="bp-hero-fig">
       <div class="bp-hero-img"><img class="bp-img" src="assets/photos/vincent-do-giang-vien-chan-dung.webp" width="900" height="1125" alt="Vincent Do, người dạy khoá Claude Mastery" style="object-position:50% 22%" fetchpriority="high" decoding="async"></div>
       <div class="bp-hero-chip"><b>50.000+</b> thành viên nhóm Nghiện Claude</div>
+      <div class="ag-term" aria-label="Ví dụ giao một việc lớn cho Claude trong một cuộc trò chuyện"><div class="ag-term-bar"><i></i><i></i><i></i><span>Claude · một cuộc trò chuyện</span></div><div class="ag-term-body"><span class="p">Bạn:</span> <span class="c">Làm báo cáo tuần cho cả phòng từ 3 file số liệu, thêm 5 slide cho họp thứ Hai</span>
+<span class="cl">Claude:</span> đọc 3 file <span class="ok">✓</span> · dùng <span class="k">Skill báo cáo của phòng</span> <span class="ok">✓</span>
+<span class="cl">Claude:</span> <span class="w">chi phí quảng cáo tăng 18%, số này đúng chưa?</span>
+<span class="p">Bạn:</span> <span class="c">Đúng rồi, làm tiếp</span>
+Claude Docs: báo cáo 2 trang <span class="ok">✓</span> · Claude Slides: 5 slide <span class="ok">✓</span>
+<span class="p">Lịch:</span> chạy lại <span class="k">7:00 mỗi thứ Hai</span>, chờ bạn duyệt
+<span class="p">Bạn:</span> <span class="c">xuất PowerPoint</span><span class="cur"></span></div></div>
     </figure>
   </div>
 </section>
