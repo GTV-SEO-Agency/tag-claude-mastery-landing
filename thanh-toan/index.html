@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap">
 <style>
 
 /* The AI Growth design tokens. Values lifted from the Agentic landing pages (09/2026). */
@@ -1393,6 +1393,13 @@
     .tds .bp-adv-price .tds-accent-grad{color:var(--tds-ink)}
     .tds .tds-strip{background:var(--cm-bl-soft);border:1px solid #D3E0FB}
     .tds .bp-buy .tds-price-left{background:linear-gradient(150deg,#1D4ED8 0%,#2563EB 100%)}
+    /* 29/09 vòng 7: thẻ hội thoại xích xuống để chừa trọn khuôn mặt (Vincent) */
+    @media (min-width:1024px){.tds .cm2-hero .ag-term{bottom:-120px;left:-40px;width:min(80%,360px)}.tds .cm2-hero{padding-bottom:calc(var(--tds-sec) + 40px)}}
+    .tds .cm2-hero .ag-term{font-size:12.5px}
+    /* 29/09 vòng 7: tối đa 2 font, serif chỉ cho tiêu đề lớn (H1, H2) và số lớn; H3, câu hỏi, chip, nhãn dùng Be Vietnam Pro */
+    .tds .tds-h3,.tds h3.tds-h,.tds .pl-step h3{font-family:var(--tds-f-body);font-weight:700;letter-spacing:-.01em}
+    .tds .cm2-quote p,.tds .cm2-solo b,.tds .cm-reg-h,.tds .bp-hero-chip b,.tds .pl-step .n i,.tds .pl-gate b,.tds .pl-gate i span,.tds .bp-usp-tip,.tds .ag-node i,.tds .bp-adv-price,.tds .cm2-fn::after{font-family:var(--tds-f-body)}
+    .tds .cm2-quote p{font-size:17px;font-weight:500}
     .tds .ag-nums b,.tds .ag-com b{font-size:40px;font-weight:600;color:var(--cm-bl-dk);-webkit-text-fill-color:var(--cm-bl-dk)}
     .tds .tds-price-big{font-family:var(--tds-f-dis);font-weight:500}
     /* form đăng ký 3 ô, 2 nút (như v1) */
@@ -1472,6 +1479,19 @@
     .cm2-quote{background:linear-gradient(135deg,#F5F0FF 0%,#EEF2FF 100%);border-color:#E3DBFD}
     .tds .bp-out-main{background:#F3F1FF;border-color:#E0DBFF}
     .tds .ag-nums b,.tds .ag-com b{background:var(--cm-grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding-right:.05em;width:fit-content}
+    /* 29/09 vòng 7: MỘT font (Vincent: "chắc nên một font chữ thôi") - Be Vietnam Pro cho toàn trang, bỏ Newsreader; tiêu đề đậm, cụm nhấn không nghiêng */
+    :root{--tds-f-dis:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+    .tds .tds-h,.tds .tds-h3,.tds h3.tds-h{font-family:var(--tds-f-body)}
+    .tds .tds-h1{font-weight:800;letter-spacing:-.025em}
+    .tds .cm2-hero .tds-h1{line-height:1.16!important}
+    .tds .tds-h2{font-weight:700;letter-spacing:-.02em;line-height:1.2}
+    .tds .tds-h3{font-weight:700;letter-spacing:-.01em}
+    .tds .tds-h .tds-accent-grad{font-style:normal}
+    .tds .cm2-n{font-style:normal;font-weight:800;font-size:34px}
+    .tds .cm2-ev-item b{font-weight:800;font-size:50px;letter-spacing:-.03em}
+    .tds .ag-nums b,.tds .ag-com b{font-weight:800;letter-spacing:-.02em}
+    .tds .tds-price-big{font-weight:800;letter-spacing:-.02em}
+    .tds .cm2-quote p{font-size:16.5px;font-weight:500}
 </style>
 <style>
     /* ---- ba trang sau form: thanh toán, cảm ơn (mobile-first) ---- */
