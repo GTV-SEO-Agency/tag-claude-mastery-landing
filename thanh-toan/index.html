@@ -1305,7 +1305,7 @@
     .ag-ai-k:first-child{margin-top:0}
     .ag-ai-main>p{font-size:14.5px;color:var(--tds-body);margin:0}
     .tds .ag-cmds{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
-    .ag-cmds li{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.55;background:#FBFAFF;border:1px solid var(--tds-bd);border-left:3px solid var(--tds-pu);border-radius:10px;padding:9px 12px;color:var(--tds-ink2)}
+    .ag-cmds li{font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:13px;line-height:1.55;background:#FBFAFF;border:1px solid var(--tds-bd);border-left:3px solid var(--tds-pu);border-radius:10px;padding:9px 12px;color:var(--tds-ink2)}
     .ag-ai-vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .ag-ai-vs>div{border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.55;color:var(--tds-body)}
     .ag-ai-vs .old{background:#FFF6F6;border:1px solid #F8D7D7}.ag-ai-vs .new{background:#F1FCF7;border:1px solid #C3EEDB;color:var(--tds-ink2)}
@@ -1425,6 +1425,12 @@
     .cm2-ev-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 34px}
     .tds .cm2-ev-lead{margin:-8px 0 22px;font-size:15px;line-height:1.6;color:var(--tds-body);max-width:78ch}
     #nghien-cuu{scroll-margin-top:96px}
+    /* 29/09 vòng 7: ảnh hero nhích lên ngang tiêu đề, chip nằm gọn trong khung, cắt vệt tối mép trái ảnh gốc */
+    @media (min-width:1024px){.cm2-hero .bp-hero-grid{align-items:start}.cm2-hero .bp-hero-fig{margin-top:58px}}
+    .tds .cm2-hero .bp-hero-chip{left:16px;right:auto;top:16px}
+    .cm2-hero .bp-hero-img img{transform:scale(1.05);transform-origin:55% 35%}
+    /* 29/09 vòng 7: hai font chủ đạo (Vincent: nhiều font quá): Newsreader cho tiêu đề và số lớn, Be Vietnam Pro cho mọi chỗ còn lại, bỏ font chữ máy */
+    :root{--ag-mono:"Be Vietnam Pro",system-ui,-apple-system,sans-serif;--tds-f-mono:"Be Vietnam Pro",system-ui,-apple-system,sans-serif}
     .ag-trust{padding:26px 0 22px;border-top:1px solid var(--tds-bd2);border-bottom:1px solid var(--tds-bd2);background:#fff}
     .ag-trust .tds-kicker{max-width:70ch}
     @media (max-width:720px){.bp-marquee-track{gap:14px 28px}.bp-marquee-track img{height:34px;max-width:130px}.bp-marquee-track li{height:40px}}
@@ -1501,7 +1507,7 @@
     .tds .pz-ico span{display:inline-flex}
     .tds .pz-chip{display:inline-flex;align-items:center;gap:8px;min-height:30px;padding:4px 12px;border-radius:999px;background:var(--tds-chip);color:var(--tds-pu3);font-size:12.5px;font-weight:700;margin-bottom:14px}
     .tds .pz-chip.ok{background:#DCFCE7;color:#15803D}
-    .tds .pz-mono{font-family:ui-monospace,Menlo,monospace;letter-spacing:.03em}
+    .tds .pz-mono{font-family:"Be Vietnam Pro",system-ui,sans-serif;letter-spacing:.03em}
     .tds .pz-pay{margin-top:20px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;background:var(--tds-wash);border:1px solid var(--tds-bd);border-radius:16px;padding:16px}
     .tds .pz-qr{text-align:center}
     .tds .pz-qr img{width:min(240px,100%);height:auto;border-radius:12px;background:#fff;display:block;margin-inline:auto}
